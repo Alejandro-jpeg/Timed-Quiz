@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timed Quiz</title>
+    <link rel="reset" href="./Assets/normalize.css">
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+<body>
+<main>
+
+    <header class="board">
+        <h1>Quiz</h1>
+        <h3 id="score">Score:</h3>
+        <h3 id="timer">Timer:</h3>
+    </header>
+
+    <section class="card">        
+        <div id="question-container" class="hide">
+            <div id="question">What?</div>
+            <div id="answer-buttons" class="btn-layout">
+                <!-- THE ANSWER BUTTONS GET APPENDED HERE -->
+            </div>
+        </div>
+
+        <div class="menu">
+            <h2 id="start-text">GET READY</h2>
+            <button id="start-btn" class="btn">Start!</button>
+        </div>
+
+        <div id ="scoreboard" class="menu hide">
+            <h2 id="score-title">SCOREBOARD</h2>
+            <h3>last registered</h3>
+            <span id="name-span"></span>
+            <span id="score-span"></span>
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Please Write Your Name" />
+              </div>
+              <button id="set-name" class="btn">Set on scoreboard</button>
+            <button id="restart-btn" class="btn">Restart</button>
+        </div>
+    </section>
+
+</main>
+<!-- INSERT THE SCRIPT -->
+<script src="./Script/script.js"></script>
+</body>
+</html>

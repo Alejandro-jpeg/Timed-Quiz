@@ -1,0 +1,90 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+:root{
+    --main-color: #e4cfeb;
+    --accents: #eba3a3;
+    --font-color: #643636;
+    --shadow:#c8b3d6;
+
+    /* card */
+    --card-bg: #f8e6f8;
+    /* button */
+    --btn-color:#c4a1c9;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color);
+    color: var(--font-color);
+}
+
+.board{
+    display: grid;
+    width: 100vw;
+    margin: 0;
+    grid-template-columns:repeat(2, auto);
+    justify-items: center;
+    box-shadow: 0 0 30px 5px var(--shadow);
+    background-color: var(--main-color);
+}
+
+.board h1{
+    grid-column: span 2;
+}
+
+.card{
+    border: solid 2px var(--accents);
+    margin: 10vh 20vw;
+    max-width: 80rem;
+    min-height: fit-content;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 30px 2px var(--accents);
+}
+
+
+.btn-layout{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+    margin: 20px 10px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu h2{
+    align-self: center;
+}
+
+.input-group{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.btn{
+    background-color: var(--btn-color);
+    font-size: larger;
+    border-radius: 15px;
+    padding: 2rem 2rem;
+    color: var(--font-color);
+    border-color: var(--font-color);
+}
+
+.btn:hover{
+    border-color: var(--accents);
+}
+
+.hide{
+    display: none;
+}
+
